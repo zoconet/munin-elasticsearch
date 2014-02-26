@@ -131,7 +131,8 @@ data['jvm'] = {
 }
 
 data['gc'] = {
-    "count" => node_stats['jvm']['gc']['collection_count']
+    "count_old" => node_stats['jvm']['gc']['collectors']['old']['collection_count'],
+    "count_young" => node_stats['jvm']['gc']['collectors']['young']['collection_count']
 }
 
 data['cache'] = {
