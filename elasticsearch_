@@ -156,6 +156,11 @@ data['store'] = {
     "size" => node_stats['indices']['store']['size_in_bytes']
 }
 
+data['http'] = {
+    "current_open" => node_stats['http']['current_open'],
+    "total_opened" => node_stats['http']['total_opened']
+}
+
 # print result
 data[mode].each do |k, v|
     printf "#{k}.value %s\n", v
