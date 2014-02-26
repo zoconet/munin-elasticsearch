@@ -107,19 +107,19 @@ if ARGV[0] == "config"
             puts "graph_order size"
             puts "size.label store size";
             puts "size.draw LINE2";
-				when "http"
-						puts "graph_title elasticsearch http connections"
-						puts "graph_category elasticsearch"
-						puts "graph_args --base 1000 -l 0"
-						      puts "graph_vlabel http connections"
+        when "http"
+            puts "graph_title elasticsearch http connections"
+            puts "graph_category elasticsearch"
+            puts "graph_args --base 1000 -l 0"
+            puts "graph_vlabel http connections"
 
-						      puts "graph_order current_open total_opened"
-						puts "current_open.label current"
-						      puts "current_open.type DERIVE"
-						      puts "current_open.draw LINE2"
-						puts "total_opened.label total opened"
-						      puts "total_opened.type DERIVE"
-						      puts "total_opened.draw LINE2"
+            puts "graph_order current_open total_opened"
+            puts "current_open.label current"
+            puts "current_open.type DERIVE"
+            puts "current_open.draw LINE2"
+            puts "total_opened.label total opened"
+            puts "total_opened.type DERIVE"
+            puts "total_opened.draw LINE2"
     end
     exit 0
 end
